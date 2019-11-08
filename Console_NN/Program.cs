@@ -10,12 +10,36 @@ namespace Console_NN
     {
         static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            string[] Names = { "ABC", "BCD", "CDEA", "DEF", "EFG" };
+            string value = "Yes";
+            while (value.ToUpper() == "YES")
+            {
+                Console.WriteLine("Please enter one character");
+                string str = Console.ReadLine();
+                var list = from x in Names where x.Contains(str) select x;
+                foreach (string x in list)
+                    Console.WriteLine(x);
 
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+                Console.WriteLine("Do you want to continue : Yes or No !");
+                value = Console.ReadLine();
+            }
+
+
+
+            
+
+           // Console.ReadLine();
         }
+        
+
     }
+    class Student
+    {
+        public int StudentID { get; set; }
+        public String StudentName { get; set; }
+        public int Age { get; set; }
+
+        Student 
+    }
+
 }
