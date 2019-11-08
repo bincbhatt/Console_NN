@@ -26,11 +26,11 @@ namespace Console_NN
 
 
 
-            
 
-           // Console.ReadLine();
+
+            // Console.ReadLine();
         }
-        
+
 
     }
     class Student
@@ -39,7 +39,10 @@ namespace Console_NN
         public String StudentName { get; set; }
         public int Age { get; set; }
 
-        Student 
+        public Student()
+        {
+            StudentID = 0;
+        }
     }
 
 }
